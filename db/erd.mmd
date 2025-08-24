@@ -1,0 +1,51 @@
+%% erd.mmd - Diagrama ER (use https://mermaid.live para exportar PNG)
+erDiagram
+    SITE ||--o{ ASSET : possui
+    ASSET ||--o{ SENSOR : possui
+    SENSOR ||--o{ READING : gera
+    ASSET ||--o{ ASSET_STATE : tem
+
+    SITE {
+      number site_id PK
+      varchar name
+      varchar city
+      varchar state
+      timestamp created_at
+    }
+    ASSET {
+      number asset_id PK
+      number site_id FK
+      varchar name
+      varchar type
+      timestamp installed_at
+    }
+    SENSOR_TYPE ||--o{ SENSOR : classifica
+    SENSOR_TYPE {
+      number sensor_type_id PK
+      varchar code
+      varchar description
+      varchar unit
+    }
+    SENSOR {
+      number sensor_id PK
+      number asset_id FK
+      number sensor_type_id FK
+      varchar model
+      varchar serial_number
+      timestamp installed_at
+      char is_active
+    }
+    READING {
+      number reading_id PK
+      number sensor_id FK
+      timestamp ts
+      number value_num
+      varchar quality
+    }
+    ASSET_STATE {
+      number asset_state_id PK
+      number asset_id FK
+      timestamp ts
+      varchar state
+      varchar note
+    }

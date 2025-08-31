@@ -1,4 +1,4 @@
-# Sprint 3 — Hermes Reply / FIAP · indusAI Innovations (Entrega Técnica)
+# Sprint 3 — Hermes Reply / FIAP · indusAI Innovations
 
 > **Resumo executivo.** Esta entrega consolida **modelagem relacional** para dados de sensores + **pipeline de Machine Learning** reproduzível. O repositório inclui: DER (imagem e Mermaid), scripts SQL (DDL/seed), dataset multissensor com >500 leituras por sensor, código Python (classificação obrigatória + regressão opcional), **métricas e gráficos** em `results/`, prints de validação do banco em `db/prints/` e **README** com instruções de execução e justificativas técnicas.
 

@@ -1,0 +1,9 @@
+              precision    recall  f1-score   support
+
+      alerta     0.9375    0.9146    0.9259        82
+       falha     0.8000    1.0000    0.8889         4
+      normal     0.9848    0.9873    0.9860       393
+
+    accuracy                         0.9749       479
+   macro avg     0.9074    0.9673    0.9336       479
+weighted avg     0.9751    0.9749    0.9749       479

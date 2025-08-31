@@ -1,0 +1,4 @@
+accuracy: mean=0.9854 std=0.0140
+f1_macro: mean=0.8557 std=0.0882
+precision_macro: mean=0.9513 std=0.0672
+recall_macro: mean=0.8194 std=0.1035

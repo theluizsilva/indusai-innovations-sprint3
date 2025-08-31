@@ -1,0 +1,6 @@
+labels: ['normal', 'alerta', 'falha']
+cm:
+[[393   0   0]
+ [  0  82   0]
+ [  0   0   4]]
+Custo total (regras exemplo): 0

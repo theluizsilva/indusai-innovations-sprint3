@@ -1,0 +1,9 @@
+              precision    recall  f1-score   support
+
+      alerta     1.0000    1.0000    1.0000        82
+       falha     1.0000    1.0000    1.0000         4
+      normal     1.0000    1.0000    1.0000       393
+
+    accuracy                         1.0000       479
+   macro avg     1.0000    1.0000    1.0000       479
+weighted avg     1.0000    1.0000    1.0000       479
